@@ -18,7 +18,7 @@ export function Footer() {
               PRANISH<span className="text-primary">.</span>
             </Link>
             <p className="text-muted-foreground mb-6 max-w-sm">
-              Kathmandu's most trusted trending store. Order viral products with fast delivery and COD available all over Nepal.
+              Kathmandu&apos;s most trusted trending store. Order viral products with fast delivery and COD available all over Nepal.
             </p>
             <div className="flex items-center gap-4">
               <a href="#" className="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-900 flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-colors">

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { ProductCard } from "@/components/product-card";
@@ -14,7 +14,7 @@ import { ReactLenis } from "lenis/react";
 // Framer Motion Variants
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
+  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
 };
 
 const staggerContainer = {
@@ -67,7 +67,7 @@ export default function Home() {
                 </motion.div>
                 
                 <motion.h1 variants={fadeUp} className="font-heading text-5xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-[1.1]">
-                  Kathmandu's <br />
+                  Kathmandu&apos;s <br />
                   <span className="font-calligraphy text-6xl lg:text-8xl text-primary font-normal leading-[0.8] block mt-2 mb-2">Trusted</span>
                   <span className="text-gradient">Trending Store.</span>
                 </motion.h1>
