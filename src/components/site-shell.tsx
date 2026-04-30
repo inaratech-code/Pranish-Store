@@ -18,7 +18,9 @@ export function SiteShell({
     <div className="min-h-dvh relative">
       <Navbar />
       <CartDrawer />
-      <main className="relative z-10">{children}</main>
+      <main className="relative z-10 pb-[calc(110px+env(safe-area-inset-bottom))] md:pb-0">
+        {children}
+      </main>
       {footer ? <Footer /> : null}
       {dock ? <MobileDock /> : null}
     </div>

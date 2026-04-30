@@ -35,6 +35,10 @@ export function ProductCard({ id, slug, name, price, originalPrice, image, badge
         "shadow-[0_30px_90px_rgba(0,0,0,0.45)]",
       )}
       onPointerMove={(e) => {
+        if (typeof window !== "undefined") {
+          const fine = window.matchMedia?.("(pointer:fine)")?.matches;
+          if (!fine) return;
+        }
         const el = e.currentTarget as HTMLElement;
         const r = el.getBoundingClientRect();
         const px = (e.clientX - r.left) / r.width;
@@ -46,6 +50,10 @@ export function ProductCard({ id, slug, name, price, originalPrice, image, badge
         el.style.transform = `perspective(900px) rotateX(${rotX}deg) rotateY(${rotY}deg) translateZ(0)`;
       }}
       onPointerLeave={(e) => {
+        if (typeof window !== "undefined") {
+          const fine = window.matchMedia?.("(pointer:fine)")?.matches;
+          if (!fine) return;
+        }
         const el = e.currentTarget as HTMLElement;
         el.style.transform = `perspective(900px) rotateX(0deg) rotateY(0deg) translateZ(0)`;
       }}

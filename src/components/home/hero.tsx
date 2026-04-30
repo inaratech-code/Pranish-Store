@@ -36,10 +36,10 @@ export function HomeHero() {
               variants={fade}
               className="mt-6"
             >
-              <h1 className="font-heading text-[44px] sm:text-6xl lg:text-7xl font-extrabold tracking-[-0.04em] leading-[0.95]">
+              <h1 className="font-heading text-[40px] sm:text-6xl lg:text-7xl font-extrabold tracking-[-0.045em] leading-[0.96]">
                 Kathmandu’s{" "}
                 <span className="block mt-2">
-                  <span className="font-calligraphy text-primary font-normal text-[64px] sm:text-8xl lg:text-9xl leading-[0.72] inline-block">
+                  <span className="font-calligraphy text-primary font-normal text-[56px] sm:text-8xl lg:text-9xl leading-[0.72] inline-block">
                     Trusted
                   </span>{" "}
                   <span className="text-gradient">Trending Store</span>
@@ -91,7 +91,7 @@ export function HomeHero() {
               animate="show"
               transition={{ delay: 0.26 }}
               variants={fade}
-              className="mt-10 grid grid-cols-3 gap-3 max-w-xl"
+              className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-xl"
             >
               {[
                 { Icon: Truck, title: "Fast Delivery", sub: "1–2 days (KTM)" },

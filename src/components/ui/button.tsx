@@ -51,6 +51,10 @@ function Button({
     <ButtonPrimitive
       data-slot="button"
       onPointerMove={(e) => {
+        if (typeof window !== "undefined") {
+          const fine = window.matchMedia?.("(pointer:fine)")?.matches;
+          if (!fine) return;
+        }
         const el = e.currentTarget as HTMLElement;
         const r = el.getBoundingClientRect();
         const mx = ((e.clientX - r.left) / r.width) * 100;
